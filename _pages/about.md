@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI Engineer | Speech and NLP Researcher
+subtitle: "🤖 AI Engineer | 🎙️ Speech & NLP Researcher"
 
 profile:
   align: right
@@ -24,8 +24,14 @@ latest_posts:
   enabled: false
 ---
 
+Hi, I'm Antonio 👋
+
 I am a Computer Engineer focused on **AI for speech and language**, currently working on an M.Sc. thesis at the Speech and Audio Processing Lab (University of Palermo) under Prof. .
 
 My research activity is centered on **pathological speech processing**, **self-supervised learning**, and **transformer-based pipelines** for clinical tasks such as Alzheimer's detection and depression assessment.
 
 On the engineering side, I build end-to-end systems in Python and PyTorch, and I also work across software projects involving Java/Kotlin, Spring Boot, Unity, and Android.
+
+- 🧠 **Main interests:** Speech AI, NLP, Foundation Models
+- 🛠️ **Engineering stack:** Python, PyTorch, Java, Kotlin, Unity, Docker
+- 🌍 **Based in:** Palermo, Italy
