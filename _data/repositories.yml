@@ -1,14 +1,12 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - ashenclock
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - ashenclock/pappagari2021-interspeech-replication
+  - ashenclock/ROBOEXHIBIT
+  - ashenclock/WhisperYT
+  - ashenclock/Submarine-Project-2023-Control-System
+  - ashenclock/HemoClass
+  - ashenclock/Car-Price-Prediction
