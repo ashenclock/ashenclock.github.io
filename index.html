@@ -1,318 +1,327 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Antonio Spedito</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            bg: "#05070b",
-            panel: "#0c111b",
-            panel2: "#101827",
-            line: "#1b2435",
-            text: "#e5e7eb",
-            muted: "#94a3b8",
-            accent: "#3b82f6",
-            accent2: "#22d3ee"
-          },
-          boxShadow: {
-            glow: "0 0 0 1px rgba(59,130,246,.35), 0 8px 32px rgba(59,130,246,.2)"
-          }
-        }
-      }
-    };
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Antonio Spedito is an IT Engineer in Basel working across AI evaluation, machine learning, software delivery and multimodal research.">
+  <meta name="theme-color" content="#161713">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Antonio Spedito | IT Engineering, AI &amp; Machine Learning">
+  <meta property="og:description" content="AI evaluation, applied machine learning and software engineering from Basel, Switzerland.">
+  <meta property="og:url" content="https://ashenclock.github.io/">
+  <meta property="og:image" content="https://ashenclock.github.io/assets/images/antonio-spedito.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://ashenclock.github.io/">
+  <link rel="icon" href="assets/images/antonio-spedito.png" type="image/png">
+  <link rel="preload" href="assets/images/antonio-spedito.png" as="image" type="image/png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Antonio Spedito | IT Engineering, AI &amp; Machine Learning</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Antonio Spedito",
+      "url": "https://ashenclock.github.io/",
+      "image": "https://ashenclock.github.io/assets/images/antonio-spedito.png",
+      "jobTitle": "IT Engineering Intern - Artificial Intelligence and Machine Learning",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Basel, Switzerland"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Palermo"
+      },
+      "sameAs": [
+        "https://github.com/ashenclock",
+        "https://www.linkedin.com/in/antoniospedito/"
+      ]
+    }
   </script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      background:
-        radial-gradient(1200px 800px at 90% -10%, rgba(59, 130, 246, 0.18), transparent 55%),
-        radial-gradient(1000px 700px at -10% 20%, rgba(34, 211, 238, 0.12), transparent 50%),
-        #05070b;
-    }
-    .reveal {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity .6s ease, transform .6s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .project-card {
-      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-    }
-    .project-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 0 0 1px rgba(59,130,246,.35), 0 10px 38px rgba(59,130,246,.2);
-      border-color: rgba(59,130,246,.45);
-    }
-    .timeline::before {
-      content: "";
-      position: absolute;
-      left: 0.75rem;
-      top: 0.25rem;
-      bottom: 0.25rem;
-      width: 1px;
-      background: #1b2435;
-    }
-  </style>
 </head>
-<body class="overflow-x-hidden text-text antialiased selection:bg-accent/30 selection:text-white">
-  <main class="mx-auto w-full max-w-7xl px-4 pb-20 pt-8 sm:px-5 md:px-8 md:pt-14">
-    <section class="reveal rounded-3xl border border-line bg-panel/80 p-7 backdrop-blur md:p-10">
-      <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-accent2">
-        AI &amp; Machine Learning Engineer
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <a class="monogram" href="#top" aria-label="Antonio Spedito, back to top">AS<span>.</span></a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">IT Engineering · AI / ML · Basel</p>
+        <h1 id="hero-title">Antonio<br>Spedito<span>.</span></h1>
+        <p class="hero-lead">I build reliable AI systems, evaluation pipelines and software that turns complex models into useful products.</p>
+        <div class="hero-links" aria-label="Professional profiles">
+          <a href="https://github.com/ashenclock" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/antoniospedito/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <h1 class="max-w-4xl text-2xl font-semibold leading-tight tracking-tight text-white sm:text-4xl md:text-6xl">
-        Antonio Spedito
-      </h1>
-      <p class="mt-4 max-w-3xl text-base text-muted md:text-lg">
-        Building production-ready AI systems for speech, NLP, and enterprise workflows.
-      </p>
-      <p class="mt-3 text-sm text-muted">
-        MSc Computer Engineering
-      </p>
-      <p class="mt-2 inline-flex w-fit items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-medium text-accent2">
-        Basel, Switzerland 🇨🇭
-      </p>
-      <nav class="mt-8 flex flex-wrap gap-3 text-sm">
-        <a class="rounded-xl border border-line bg-panel2 px-4 py-2 text-muted hover:border-accent/50 hover:text-white" href="https://github.com/ashenclock" target="_blank" rel="noreferrer">github.com/ashenclock</a>
-        <a class="rounded-xl border border-line bg-panel2 px-4 py-2 text-muted hover:border-accent/50 hover:text-white" href="https://www.linkedin.com/in/antonio-spedito-9a7001172/" target="_blank" rel="noreferrer">LinkedIn</a>
-      </nav>
+      <div class="hero-caption">
+        <span>Currently</span>
+        <strong>IT Engineering Intern at SWISS International Air Lines</strong>
+      </div>
+      <a class="scroll-cue" href="#profile" aria-label="Continue to profile">↓</a>
     </section>
 
-    <section class="reveal mt-8 rounded-3xl border border-line bg-panel/70 p-7 md:p-10">
-      <h2 class="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-muted">About</h2>
-      <p class="max-w-5xl text-sm leading-7 text-muted md:text-base">
-        Computer Engineer specialized in Artificial Intelligence (graduated Cum Laude), with a strong focus on NLP, Speech Processing, and Machine Learning.
-      </p>
-      <p class="mt-4 max-w-5xl text-sm leading-7 text-muted md:text-base">
-        I am currently working as an IT Engineering Intern at SWISS (Lufthansa Group) in Basel, integrating "LLM-as-a-Judge" frameworks into enterprise applications. Previously, as a researcher at the Speech &amp; Audio Processing Lab (UniPa), I developed end-to-end pipelines for Alzheimer's diagnosis using Transformers and Foundation models. I love combining academic research with practical software development, leveraging Python, PyTorch, and cloud architectures to solve complex problems.
-      </p>
+    <section class="profile section-shell" id="profile" aria-labelledby="profile-title">
+      <div class="section-kicker reveal">01 / Profile</div>
+      <div class="profile-copy reveal">
+        <h2 id="profile-title">Engineering judgement for AI systems that have to work outside the notebook.</h2>
+        <p>I am a Computer Engineer with hands-on enterprise experience in Artificial Intelligence, Machine Learning, software delivery and Large Language Models. At SWISS International Air Lines, part of Lufthansa Group, I work on evaluation frameworks, regression testing and developer workflows for internal AI products.</p>
+        <p>Alongside industry work, I contribute to SHAPE-AD research at the University of Palermo, extending my Master's thesis through multimodal speech and handwriting analysis. I enjoy the point where rigorous experiments, maintainable software and clear communication meet.</p>
+      </div>
+      <dl class="impact-grid reveal" aria-label="Selected results">
+        <div>
+          <dt>0.883</dt>
+          <dd>Macro-F1 in multimodal research</dd>
+        </div>
+        <div>
+          <dt>1.58M</dt>
+          <dd>Airline fare records processed</dd>
+        </div>
+        <div>
+          <dt>3×</dt>
+          <dd>Faster AI score computation</dd>
+        </div>
+      </dl>
     </section>
 
-    <section class="reveal mt-8 rounded-3xl border border-line bg-panel/70 p-7 md:p-10">
-      <h2 class="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-muted">Research Interests</h2>
-      <div class="flex flex-wrap gap-3">
-        <span class="rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-sm text-accent2">Machine Learning</span>
-        <span class="rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-sm text-accent2">Natural Language Processing</span>
-        <span class="rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-sm text-accent2">Speech Processing</span>
-        <span class="rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-sm text-accent2">Computer Vision</span>
-        <span class="rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-sm text-accent2">Software Engineering</span>
-      </div>
-    </section>
-
-    <section class="reveal mt-8 rounded-3xl border border-line bg-panel/70 p-7 md:p-10">
-      <h2 class="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-muted">Experience</h2>
-      <div class="timeline relative space-y-6 pl-8">
-        <article class="rounded-2xl border border-line bg-panel2 p-5">
-          <div class="mb-1 flex flex-wrap items-baseline justify-between gap-2">
-            <h3 class="text-base font-semibold text-white">Swiss International Air Lines (Lufthansa Group)</h3>
-            <span class="text-xs text-muted">Mar. 2026 – Present</span>
-          </div>
-          <p class="mb-3 text-sm text-accent2">IT Engineering Intern | AI &amp; Machine Learning Engineer</p>
-          <p class="text-sm leading-7 text-muted">Integrating an "LLM-as-a-Judge" evaluation framework to assess an internal GPT-5 chat assistant. Enhancing developer productivity by integrating GitHub Copilot, authoring custom prompts, agents, skills, and integrating Azure MCP for automatic PBI creation and PRs. Managing enterprise cloud architecture leveraging Azure DevOps, Kubernetes, and Cosmos DB.</p>
-        </article>
-
-        <article class="rounded-2xl border border-line bg-panel2 p-5">
-          <div class="mb-1 flex flex-wrap items-baseline justify-between gap-2">
-            <h3 class="text-base font-semibold text-white">Speech &amp; Audio Processing Lab — University of Palermo</h3>
-            <span class="text-xs text-muted">Sep. 2025 – Mar. 2026</span>
-          </div>
-          <p class="mb-3 text-sm text-accent2">M.Sc. Thesis</p>
-          <p class="text-sm leading-7 text-muted">Active member of the research group focusing on advanced pathological speech processing and Large Audio Models. Developing end-to-end pipelines for Alzheimer’s diagnosis using Transformers and Self-Supervised Learning (SSL).</p>
-        </article>
-
-        <article class="rounded-2xl border border-line bg-panel2 p-5">
-          <div class="mb-1 flex flex-wrap items-baseline justify-between gap-2">
-            <h3 class="text-base font-semibold text-white">Private Tutor (Computer Science)</h3>
-            <span class="text-xs text-muted">2022 – 2023</span>
-          </div>
-          <p class="mb-3 text-sm text-accent2">Part-time · Palermo, Italy</p>
-          <p class="text-sm leading-7 text-muted">Taught Python and C programming to students, simplifying complex algorithmic concepts. Managed educational plans and scheduling, adapting teaching strategies to individual learning speeds.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="reveal mt-8">
-      <div class="mb-6 flex items-center justify-between gap-4">
-        <h2 class="text-xs font-semibold uppercase tracking-[0.2em] text-muted">Projects &amp; Skills</h2>
+    <section class="work section-shell section-ink" id="work" aria-labelledby="work-title">
+      <div class="section-kicker reveal">02 / Experience</div>
+      <div class="section-heading reveal">
+        <h2 id="work-title">Work shaped by measurable outcomes.</h2>
+        <p>Enterprise AI, applied research and teaching across Switzerland and Italy.</p>
       </div>
 
-      <div class="grid grid-cols-1 gap-4 lg:grid-cols-12">
-        <article class="project-card rounded-2xl border border-line bg-panel/70 p-5 lg:col-span-6">
-          <div class="mb-3 flex items-baseline justify-between gap-2">
-            <h3 class="text-base font-semibold text-white"><a href="https://github.com/ashenclock/pappagari2021-interspeech-replication" target="_blank" rel="noreferrer" class="hover:text-accent2">Alzheimer's Detection (Replication)</a></h3>
-            <span class="text-xs text-muted">2025</span>
+      <div class="timeline">
+        <article class="timeline-row reveal">
+          <div class="timeline-meta">
+            <p>03/2026 - Present</p>
+            <p>Basel, Switzerland</p>
           </div>
-          <p class="text-sm leading-7 text-muted">Re-implemented the multimodal framework by Pappagari et al. (2021), replacing Kaldi with SOTA Transducers (Parakeet TDT) and Whisper. Benchmarked Deep Embeddings against handcrafted features.</p>
-          <p class="mt-3 inline-flex rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-300">87.32% accuracy · original paper 84.51%</p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs">
-            <span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">PyTorch</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Whisper</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Parakeet TDT</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">BERT</span>
-          </div>
-        </article>
-
-        <article class="project-card rounded-2xl border border-line bg-panel/70 p-5 lg:col-span-6">
-          <div class="mb-3 flex items-baseline justify-between gap-2">
-            <h3 class="text-base font-semibold text-white"><a href="https://github.com/ashenclock" target="_blank" rel="noreferrer" class="hover:text-accent2">Depression Assessment from Speech</a></h3>
-            <span class="text-xs text-muted">2025</span>
-          </div>
-          <p class="text-sm leading-7 text-muted">Designed a hierarchical SSL architecture combining Wav2Vec 2.0 with Transformer encoders and Gated Attention Pooling to capture long-term temporal dependencies in the DAIC-WOZ dataset.</p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs">
-            <span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Wav2Vec 2.0</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Transformers</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">CNN-1D</span>
+          <div class="timeline-body">
+            <p class="role-label">IT Engineering Intern · Artificial Intelligence and Machine Learning</p>
+            <h3>SWISS International Air Lines <span>(Lufthansa Group)</span></h3>
+            <p>Designing a versioned evaluation framework for an internal employee assistant, combining deterministic checks, tool-call validation, semantic judging and release gates. Built regression assets around roughly 100 samples and reduced evaluation latency from about 6 seconds to 2 seconds by parallelising score computation.</p>
+            <ul class="inline-facts" aria-label="SWISS focus areas">
+              <li>LLM evaluation</li>
+              <li>RAG regression</li>
+              <li>AI safety testing</li>
+              <li>Azure DevOps</li>
+            </ul>
           </div>
         </article>
 
-        <article class="project-card rounded-2xl border border-line bg-panel/70 p-5 lg:col-span-4">
-          <div class="mb-3 flex items-baseline justify-between gap-2">
-            <h3 class="text-base font-semibold text-white"><a href="https://github.com/ashenclock" target="_blank" rel="noreferrer" class="hover:text-accent2">TweetEval NLP Evaluation &amp; Data Augmentation</a></h3>
-            <span class="text-xs text-muted">2025</span>
+        <article class="timeline-row reveal" id="research">
+          <div class="timeline-meta">
+            <p>03/2026 - Present</p>
+            <p>University of Palermo</p>
           </div>
-          <p class="text-sm leading-7 text-muted">Built an automated pipeline to generate synthetic training data for social media text classification. Fine-tuned RoBERTa and BERT models, establishing a robust evaluation framework.</p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs">
-            <span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">PyTorch</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">DeepSeek V3</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">HuggingFace</span>
-          </div>
-        </article>
-
-        <article class="project-card rounded-2xl border border-line bg-panel/70 p-5 lg:col-span-4">
-          <div class="mb-3 flex items-baseline justify-between gap-2">
-            <h3 class="text-base font-semibold text-white"><a href="https://github.com/ashenclock/ROBOEXHIBIT" target="_blank" rel="noreferrer" class="hover:text-accent2">RoboExhibit</a></h3>
-            <span class="text-xs text-muted">2024–2025</span>
-          </div>
-          <p class="text-sm leading-7 text-muted">Developed an autonomous AI Agent acting as a guide in a virtual museum, handling multi-step queries. Implemented a neuro-symbolic approach where an LLM generates SPARQL queries to retrieve facts from an ontology.</p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs">
-            <span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Unity 3D</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">C#</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">LLM</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">SPARQL</span>
+          <div class="timeline-body">
+            <p class="role-label">Graduate Researcher · Master's thesis extension</p>
+            <h3>Speech &amp; Audio Processing Lab / SHAPE-AD</h3>
+            <p>Contributing to a research manuscript on paired speech and handwriting analysis across 97 participants and three modelling streams. Subject-level late fusion reached 0.883 Macro-F1 and 0.884 accuracy across experiments covering 18 handwriting tasks and seven speech tasks.</p>
+            <ul class="inline-facts" aria-label="Research focus areas">
+              <li>Multimodal learning</li>
+              <li>Speech processing</li>
+              <li>ASR</li>
+              <li>Reproducible research</li>
+            </ul>
           </div>
         </article>
 
-        <article class="project-card rounded-2xl border border-line bg-panel/70 p-5 lg:col-span-4">
-          <div class="mb-3 flex items-baseline justify-between gap-2">
-            <h3 class="text-base font-semibold text-white"><a href="https://github.com/ashenclock/HemoClass" target="_blank" rel="noreferrer" class="hover:text-accent2">HemoClass</a></h3>
-            <span class="text-xs text-muted">2024</span>
+        <article class="timeline-row reveal">
+          <div class="timeline-meta">
+            <p>2022 - 2023</p>
+            <p>Palermo, Italy</p>
           </div>
-          <p class="text-sm leading-7 text-muted">Blood Cell Image Classification project using image compression (QR &amp; SVD) and neural networks to classify healthy and cancerous leukocytes.</p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs">
-            <span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">MATLAB</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Neural Networks</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Computer Vision</span>
-          </div>
-        </article>
-
-        <article class="project-card rounded-2xl border border-line bg-panel/70 p-5 lg:col-span-6">
-          <div class="mb-3 flex items-baseline justify-between gap-2">
-            <h3 class="text-base font-semibold text-white"><a href="https://github.com/ashenclock/360ViewNavigator" target="_blank" rel="noreferrer" class="hover:text-accent2">360ViewNavigator</a></h3>
-            <span class="text-xs text-muted">2024</span>
-          </div>
-          <p class="text-sm leading-7 text-muted">Interactive viewer for equirectangular images with real-time conversion to perspective views. Implemented a visual object tracker capable of following targets within distorted 360-degree spherical space.</p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs">
-            <span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Python</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">OpenCV</span>
-          </div>
-        </article>
-
-        <article class="project-card rounded-2xl border border-line bg-panel/70 p-5 lg:col-span-6">
-          <div class="mb-3 flex items-baseline justify-between gap-2">
-            <h3 class="text-base font-semibold text-white"><a href="https://github.com/ashenclock/Car-Price-Prediction" target="_blank" rel="noreferrer" class="hover:text-accent2">Car Price Prediction</a></h3>
-            <span class="text-xs text-muted">2024</span>
-          </div>
-          <p class="text-sm leading-7 text-muted">Jupyter notebook illustrating the development of machine learning models for car price prediction. Analyzes a dataset of car features to identify factors influencing sales price.</p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs">
-            <span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Python</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Scikit-learn</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Pandas</span>
-          </div>
-        </article>
-
-        <article class="project-card rounded-2xl border border-line bg-panel/70 p-5 lg:col-span-4">
-          <div class="mb-3 flex items-baseline justify-between gap-2">
-            <h3 class="text-base font-semibold text-white"><a href="https://github.com/ashenclock/Submarine-Project-2023-Control-System" target="_blank" rel="noreferrer" class="hover:text-accent2">Submarine Control System</a></h3>
-            <span class="text-xs text-muted">2023</span>
-          </div>
-          <p class="text-sm leading-7 text-muted">Design and implementation in Simulink environment of a controller to stabilize a submarine described by differential equations.</p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs">
-            <span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">MATLAB</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Simulink</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Control Systems</span>
-          </div>
-        </article>
-
-        <article class="project-card rounded-2xl border border-line bg-panel/70 p-5 lg:col-span-4">
-          <div class="mb-3 flex items-baseline justify-between gap-2">
-            <h3 class="text-base font-semibold text-white"><a href="https://github.com/ashenclock/WhisperYT" target="_blank" rel="noreferrer" class="hover:text-accent2">WhisperYT</a></h3>
-            <span class="text-xs text-muted">2024</span>
-          </div>
-          <p class="text-sm leading-7 text-muted">Repository to easily convert a YouTube video to a text transcript using the OpenAI Whisper model.</p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs">
-            <span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Python</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Whisper</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">YouTube API</span>
-          </div>
-        </article>
-
-        <article class="project-card rounded-2xl border border-line bg-panel/70 p-5 lg:col-span-4">
-          <div class="mb-3 flex items-baseline justify-between gap-2">
-            <h3 class="text-base font-semibold text-white"><a href="https://github.com/ashenclock" target="_blank" rel="noreferrer" class="hover:text-accent2">SPVM: Workforce Management System</a></h3>
-            <span class="text-xs text-muted">2022–2023</span>
-          </div>
-          <p class="text-sm leading-7 text-muted">Engineered a secure backend system to manage workforce tasks with role-based access control. Developed an automated assignment algorithm to allocate tasks to employees based on skills.</p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs">
-            <span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Java</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Spring Boot</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">Docker</span><span class="rounded-md border border-line bg-panel2 px-2 py-1 text-muted">SQL</span>
-          </div>
-        </article>
-
-        <article class="rounded-2xl border border-line bg-panel/70 p-5 lg:col-span-12">
-          <h3 class="mb-4 text-base font-semibold text-white">Skills</h3>
-          <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
-            <div class="rounded-xl border border-line bg-panel2 p-4">
-              <p class="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted">Programming</p>
-              <p class="text-sm leading-7 text-muted">Python, Java, C#, Kotlin, C/C++, TypeScript, SQL, SPARQL</p>
-            </div>
-            <div class="rounded-xl border border-line bg-panel2 p-4">
-              <p class="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted">AI &amp; Data</p>
-              <p class="text-sm leading-7 text-muted">PyTorch, HuggingFace, LangChain, DeepSeek V3, Azure AI Foundry, Semantic Web, Computer Vision</p>
-            </div>
-            <div class="rounded-xl border border-line bg-panel2 p-4">
-              <p class="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted">Development</p>
-              <p class="text-sm leading-7 text-muted">.NET, Angular, Spring Boot, Docker, Kubernetes, Azure DevOps, Git, Linux</p>
-            </div>
-            <div class="rounded-xl border border-line bg-panel2 p-4">
-              <p class="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted">Tools</p>
-              <p class="text-sm leading-7 text-muted">Adobe Creative Cloud (Premiere, After Effects, Illustrator), Figma</p>
-            </div>
-            <div class="rounded-xl border border-line bg-panel2 p-4 md:col-span-2">
-              <p class="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted">Languages</p>
-              <p class="text-sm leading-7 text-muted">Italian (Native), English (Intermediate), German (Basic)</p>
-            </div>
+          <div class="timeline-body">
+            <p class="role-label">Private Tutor · Computer Science</p>
+            <h3>Independent</h3>
+            <p>Taught Python and C programming to five students, adapting study plans to individual learning speeds and strengthening problem decomposition, debugging and code-reading skills.</p>
           </div>
         </article>
       </div>
     </section>
 
-    <footer class="reveal mt-10 border-t border-line pt-6 pb-4 px-4 md:px-0 text-xs md:text-sm text-muted">
-      <p class="leading-relaxed">
-        Privacy (GDPR): This website does not use non-essential cookies, tracking, contact forms, or analytics.
-        Hosting is provided by GitHub Pages and static assets may be served by third-party CDNs.
-        See <a class="text-accent2 hover:text-white underline" href="privacy.html">Privacy Notice</a>.
-      </p>
-      <p class="mt-3 leading-relaxed">
-        © 2026 Antonio Spedito — <a class="text-accent2 hover:text-white underline" href="LICENSE">All Rights Reserved License</a>.
-        No reuse, reproduction, or derivative works without prior written permission.
-      </p>
-    </footer>
+    <section class="projects section-shell" id="projects" aria-labelledby="projects-title">
+      <div class="section-kicker reveal">03 / Selected repositories</div>
+      <div class="section-heading reveal">
+        <h2 id="projects-title">Projects with evidence, not just demos.</h2>
+        <a class="text-link" href="https://github.com/ashenclock?tab=repositories" target="_blank" rel="noreferrer">All repositories <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-topline">
+            <span>Machine Learning · 2026</span>
+            <span>01</span>
+          </div>
+          <h3>Airline Revenue Management Lab</h3>
+          <p>A memory-aware ML pipeline over roughly 1.58 million public fare records. It compares eight models, adds SHAP explainability and simulates revenue across seven pricing scenarios.</p>
+          <div class="metric-row">
+            <div><strong>$1.68</strong><span>MAE</span></div>
+            <div><strong>0.9983</strong><span>R²</span></div>
+          </div>
+          <p class="stack">Python · Polars · XGBoost · PyTorch · SHAP · Streamlit · Tableau</p>
+          <a class="project-link" href="https://github.com/ashenclock/airline-revenue-management-lab" target="_blank" rel="noreferrer" aria-label="Open Airline Revenue Management Lab on GitHub">View repository <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project-card project-featured project-accent reveal">
+          <div class="project-topline">
+            <span>AI Agents · 2026</span>
+            <span>02</span>
+          </div>
+          <h3>Aetheris</h3>
+          <p>A local-first ReAct coding agent with six tool skills, provider-agnostic model access and persistent asynchronous SQLite memory. Sessions include dynamic skill loading plus live token and cost tracking.</p>
+          <div class="terminal-sample" aria-label="Aetheris terminal example">
+            <span>~/project</span>
+            <code>aetheris chat --model local</code>
+            <span class="terminal-status">● memory ready</span>
+          </div>
+          <p class="stack">Python · LiteLLM · SQLite · ReAct · Typer · Rich</p>
+          <a class="project-link" href="https://github.com/ashenclock/aetheris" target="_blank" rel="noreferrer" aria-label="Open Aetheris on GitHub">View repository <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span>Multimodal AI · 2025</span>
+            <span>03</span>
+          </div>
+          <h3>Pappagari et al. Replication</h3>
+          <p>Re-implemented an Interspeech 2021 speech and language framework, replacing legacy ASR components with Whisper and Parakeet TDT.</p>
+          <p class="project-result"><strong>87.32%</strong> accuracy vs 84.51% baseline</p>
+          <a class="project-link" href="https://github.com/ashenclock/pappagari2021-interspeech-replication" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span>NLP · 2025</span>
+            <span>04</span>
+          </div>
+          <h3>TweetEval Challenge</h3>
+          <p>Built synthetic-data and fine-tuning workflows for BERT and RoBERTa across multi-class emotion and binary irony classification.</p>
+          <p class="project-result"><strong>3rd</strong> place · 85% / 83% accuracy</p>
+          <a class="project-link" href="https://github.com/ashenclock/NLP-Tweet-CLS-Challenge" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span>Neuro-symbolic AI · 2024</span>
+            <span>05</span>
+          </div>
+          <h3>RoboExhibit</h3>
+          <p>A virtual museum guide that answers multi-step visitor questions through a two-stage flow combining LLM generation and ontology-grounded SPARQL retrieval.</p>
+          <p class="stack">Unity 3D · C# · LLMs · RDF · SPARQL</p>
+          <a class="project-link" href="https://github.com/ashenclock/ROBOEXHIBIT" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span>Backend Engineering · 2023</span>
+            <span>06</span>
+          </div>
+          <h3>SPVM Workforce Management</h3>
+          <p>A Spring Boot backend with SQL persistence, role-based access control and automated task assignment across three core application areas.</p>
+          <p class="stack">Java · Spring Boot · Docker · SQL · RBAC</p>
+          <a class="project-link" href="https://github.com/ashenclock/SPVMProject" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section-shell" id="skills" aria-labelledby="skills-title">
+      <div class="section-kicker reveal">04 / Capabilities</div>
+      <div class="section-heading reveal">
+        <h2 id="skills-title">A broad engineering toolkit, centred on AI delivery.</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>Programming</h3>
+          <p>Python, Java, C#, Kotlin, C/C++, TypeScript, SQL, SPARQL</p>
+        </div>
+        <div class="skill-group reveal">
+          <h3>AI &amp; Data</h3>
+          <p>PyTorch, TensorFlow, scikit-learn, Hugging Face, XGBoost, Polars, SHAP, RAG, LLM evaluation</p>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Platforms</h3>
+          <p>Azure ML, Azure AI Foundry, Databricks, Docker, Kubernetes, Azure DevOps, Linux, Git</p>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Engineering</h3>
+          <p>MLOps, LLMOps, Model Context Protocol, guardrails, regression testing, code review, documentation</p>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Languages</h3>
+          <p>Italian · Native<br>English · Advanced<br>German · Conversational</p>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Ways of working</h3>
+          <p>Cross-functional teamwork, mentoring, technical communication, reproducible experiments, Agile delivery</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="education section-shell section-warm" id="education" aria-labelledby="education-title">
+      <div class="section-kicker reveal">05 / Education</div>
+      <div class="section-heading reveal">
+        <h2 id="education-title">Computer Engineering from foundations to applied AI.</h2>
+      </div>
+      <div class="education-list">
+        <article class="education-row reveal">
+          <p class="education-date">2023 - 2026</p>
+          <div>
+            <h3>Master's Degree in Computer Engineering</h3>
+            <p class="education-place">University of Palermo · Artificial Intelligence curriculum</p>
+            <p>Summa Cum Laude, 110/110 with Honours. Focused on Machine Learning, Natural Language Processing, speech, computer vision, big data and advanced software engineering.</p>
+          </div>
+        </article>
+        <article class="education-row reveal">
+          <p class="education-date">2020 - 2023</p>
+          <div>
+            <h3>Bachelor's Degree in Computer Engineering</h3>
+            <p class="education-place">University of Palermo · 101/110</p>
+            <p>Built a foundation across programming, algorithms, operating systems, databases, computer architecture, electronics, control systems and web technologies.</p>
+          </div>
+        </article>
+        <article class="education-row reveal">
+          <p class="education-date">2022</p>
+          <div>
+            <h3>German Language Course</h3>
+            <p class="education-place">EF Internationaler Sprachcampus Berlin</p>
+            <p>Intensive language study combined with cultural immersion in Berlin.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+      <div class="contact-content reveal">
+        <p class="section-kicker">06 / Contact</p>
+        <h2 id="contact-title">Let’s build systems that earn trust.</h2>
+        <p>Based in Basel and interested in AI Engineering, Machine Learning, Software Engineering and Data Science opportunities across Switzerland and Europe.</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/antoniospedito/" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/ashenclock" target="_blank" rel="noreferrer">Explore GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script>
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
+  <footer class="site-footer">
+    <p>© <span data-year>2026</span> Antonio Spedito</p>
+    <p>No analytics. No tracking. <a href="privacy.html">Privacy notice</a></p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
 
-    document.querySelectorAll(".reveal, .project-card").forEach((el) => observer.observe(el));
-  </script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
